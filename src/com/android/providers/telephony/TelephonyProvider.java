@@ -253,7 +253,6 @@ public class TelephonyProvider extends ContentProvider
                     + SubscriptionManager.CB_ALERT_SPEECH + " INTEGER DEFAULT 1,"
                     + SubscriptionManager.CB_ETWS_TEST_ALERT + " INTEGER DEFAULT 0,"
                     + SubscriptionManager.CB_CHANNEL_50_ALERT + " INTEGER DEFAULT 1,"
-                    + SubscriptionManager.CB_CHANNEL_60_ALERT + " INTEGER DEFAULT 1,"
                     + SubscriptionManager.CB_CMAS_TEST_ALERT + " INTEGER DEFAULT 1,"
                     + SubscriptionManager.CB_OPT_OUT_DIALOG + " INTEGER DEFAULT 1"
                     + ");");
@@ -651,8 +650,6 @@ public class TelephonyProvider extends ContentProvider
                             + SubscriptionManager.CB_ETWS_TEST_ALERT + " INTEGER DEFAULT 0;");
                     db.execSQL("ALTER TABLE " + SIMINFO_TABLE + " ADD COLUMN "
                             + SubscriptionManager.CB_CHANNEL_50_ALERT + " INTEGER DEFAULT 1;");
-                    db.execSQL("ALTER TABLE " + SIMINFO_TABLE + " ADD COLUMN "
-                            + SubscriptionManager.CB_CHANNEL_60_ALERT + " INTEGER DEFAULT 1;");
                     db.execSQL("ALTER TABLE " + SIMINFO_TABLE + " ADD COLUMN "
                             + SubscriptionManager.CB_CMAS_TEST_ALERT + " INTEGER DEFAULT 1;");
                     db.execSQL("ALTER TABLE " + SIMINFO_TABLE + " ADD COLUMN "
